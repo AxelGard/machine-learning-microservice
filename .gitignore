@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+*.keras
+*.csv
+data/
+.DS_Store
+
 __pycache__/
 *.py[codz]
 *$py.class
