@@ -9,6 +9,29 @@ Most likley you will want to change the predicted resturn to be json and not htm
 As well as chage the data to be sent in a json format. 
 This is justa way of very easliy intract with the service and test it. 
 
+## setup
+
+
+### install 
+
+```
+python3 -m venv env
+```
+
+```
+source ./env/bin/activate
+```
+
+```
+pip install -r requirements.txt
+```
+
+### run
+
+```
+python3 service/server.py
+```
+
 
 ## UI
 
