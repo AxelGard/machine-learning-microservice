@@ -27,6 +27,23 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 g_model = None
 
+UPLOAD_HTML = """
+<!doctype html>
+<html>
+<head>
+    <title>Model-Service/Upload Data</title>
+</head>
+<body>
+    <h1>Upload a CSV file</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="file/*">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
+""" 
+
+
 def get_model():
     global g_model
     if g_model == None:
@@ -53,9 +70,7 @@ def upload_file():
                 y_pred = predict(filepath)
                 X = pd.read_csv(filepath)
                 X["prediction"] = y_pred
-                return X.to_html(index=False)
-    if request.method == 'GET':
-        return """
+                return f"""
 <!doctype html>
 <html>
 <head>
@@ -67,9 +82,16 @@ def upload_file():
         <input type="file" name="file" accept="file/*">
         <input type="submit" value="Upload">
     </form>
+    <br>
+    <br>
+    <h2>Prediction</h2>
+    {X.to_html(index=False)}
 </body>
 </html>
 """ 
-
+            
+    if request.method == 'GET':
+        global UPLOAD_HTML
+        return UPLOAD_HTML
 if __name__ == '__main__':
     app.run(debug=True)

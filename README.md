@@ -12,5 +12,4 @@ This is justa way of very easliy intract with the service and test it.
 
 ## UI
 
-![landing page](./doc/send.png)
-![prediction page](./doc/pred.png)
+![example](./doc/ex.png)
