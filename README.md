@@ -1,6 +1,6 @@
 # machine-learning-microservice
 
-![icon](./doc/icon.png)
+<img src="https://raw.githubusercontent.com/AxelGard/machine-learning-microservice/master/doc/icon.png" alt="drawing" style="width:300px;"/>
 
 My template for how to make a simple micro service for machine learning models. (in python)
 
