@@ -32,6 +32,11 @@ pip install -r requirements.txt
 python3 service/server.py
 ```
 
+### train
+
+In `machine-learning-microservice/service/train.ipynb` you can re-train the model or change the problem, models etc. 
+
+If you add a new model, it also need to be in the server. 
 
 ## UI
 
