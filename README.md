@@ -30,7 +30,7 @@ pip install -r requirements.txt
 mkdir data
 ```
 
-Download a data set, as en example I have used https://gist.github.com/slopp/ce3b90b9168f2f921784de84fa445651
+Download a data set, as en example that I have used https://gist.github.com/slopp/ce3b90b9168f2f921784de84fa445651
 ```
 cp ../Downlaods/penguin.csv ./data/penguin.csv
 ```
