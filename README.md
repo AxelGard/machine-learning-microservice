@@ -1,4 +1,7 @@
 # machine-learning-microservice
+
+![icon](./doc/icon.png)
+
 My template for how to make a simple micro service for machine learning models. (in python)
 
 
